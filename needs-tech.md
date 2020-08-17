@@ -3,16 +3,13 @@
 Scenario: Recover across restarts of the server
 that runs the visit-counter
  
-  Given : computing visit-count.
-  
-  When	: the server unexpected shut-down.
-  
-  Then	: recover across restarts of server.
+  Given system computing visit-count
+  When the server goes down unexpectedly
+  Then the recover across restarts the server
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
-  Given	: Sensor is online.
-  
-  When	: If the sensor is offline.
-  
-  Then	: Reconcile counts.
+  Given Sensor is online
+  and working
+  When the sensor is offline
+  Then Reconcile count
