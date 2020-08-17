@@ -2,7 +2,7 @@
 
 Scenario: Recover across restarts of the server
 that runs the visit-counter
- 
+
   Given system computing visit-count
   When the server goes down unexpectedly
   Then the recover across restarts the server
