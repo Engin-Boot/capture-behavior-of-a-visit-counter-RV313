@@ -9,5 +9,5 @@ Scenario: Show patient visits during working days and holidays
 Scenario: Compute parking slots to reserve for visiting specialists
 
   Given : The parking slots.
-  When	: If specialists are visiting.
+  When	: specialists are visiting.
   Then  : Reserve the parking slots.
