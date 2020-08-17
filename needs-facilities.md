@@ -16,5 +16,5 @@ Scenario: Alert when seating capacity is full
   When the seating capacity is full
   the sensor will detect the void seats availability
   with the help of counter
-  Then the alert will be raised
+  Then the alert will trigger
   if the counter is zero.
