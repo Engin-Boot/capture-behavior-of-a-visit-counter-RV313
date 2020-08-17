@@ -4,7 +4,7 @@ Scenario: Report visitor trends during a week of operation
 
   Given the Visitor visiting
   and system is working
-  we will assign id number to them
+  we will assign id numbers to them
   When visitors will come during a week
   Then we will generate the report of visitors
   in excel sheet according to id numbers
