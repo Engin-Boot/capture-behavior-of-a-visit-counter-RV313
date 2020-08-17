@@ -5,6 +5,7 @@ that runs the visit-counter
 
   Given system computing visit-count
   When the server goes down
+  or crashes
   Then the recover across restarts the server
 
 Scenario: Reconcile counts if the sensor is offline for a while
