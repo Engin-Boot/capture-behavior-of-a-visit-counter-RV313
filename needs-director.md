@@ -10,7 +10,7 @@ Scenario: Show patient visits during working days and holidays
 Scenario: Compute parking slots to reserve for visiting specialists
 
   Given the parking slot and the sensor for identifying vehicle
-  When the specialists are visiting 
-  we can give names to the slots 
+  When the specialists are visiting
+  we can give names to the slots
   Label as filled if specialists parks at the slot
   Then we can reserve the parking slots for specialists
