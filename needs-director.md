@@ -2,7 +2,7 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given the system is on 
+  Given the system is on
   and the patient visits
   we allocated them the ID number
   When we are having working days and holidays
