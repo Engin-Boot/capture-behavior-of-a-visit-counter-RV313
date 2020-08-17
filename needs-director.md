@@ -2,9 +2,9 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given the system is on and the patient visits and we allocated them the IDs
+  Given the system is on and the patient visits and we allocated them the ID number
   When we having working days and holidays
-  Then show the record of patient visitin in excel file as per IDs
+  Then show the record of patient visitin in excel file as per ID number
   
 Scenario: Compute parking slots to reserve for visiting specialists
 
