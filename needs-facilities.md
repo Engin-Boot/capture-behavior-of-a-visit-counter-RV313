@@ -2,16 +2,19 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given : Visitor visiting.
-  
-  When	: During a week of operation.
-  
-  Then  : Generate the report of visitors.
+  Given the Visitor visiting
+  and system is working
+  we will assign id number to them
+  When visitors will come during a week
+  Then we will generate the report of visitors
+  in excel sheet according to id numbers
 
 Scenario: Alert when seating capacity is full
 
-  Given : seating capacity.
-  
-  When	: if seating capacity is full.
-  
-  Then	: Raise a Alert.
+  Given the seating capacity
+  and the system is working
+  When the seating capacity is full
+  the sensor will detect the void seats availability
+  with the help of counter
+  Then the alert will be raised
+  if the counter is zero.
