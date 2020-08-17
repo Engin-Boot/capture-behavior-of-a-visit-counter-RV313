@@ -2,7 +2,8 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given the system is on and the patient visits
+  Given the system is on 
+  and the patient visits
   we allocated them the ID number
   When we are having working days and holidays
   Then show the record of patient visiting in excel file as per ID number
